@@ -18,10 +18,15 @@ public interface ProductService {
 
 	// 장바구니 insert
 	public void product3in(ProductDTO prod);
-
+	
+	// 장바구니 delete
+	public void productdel(ProductDTO prod);
+	
 	// 제품 상세페이지 select
 	public ProductDTO productse(ProductDTO prod);
 
 	public void addProduct(ProductDTO product);
+	
+	
 
 }

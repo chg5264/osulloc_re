@@ -208,7 +208,21 @@ li .pic2 {
 	font-weight: bold;
 	text-align: center;
 	border-radius: 50%;
+
 }
+
+/* .commodity .cart-del a{
+	display : inline-block;
+	width : 120%;
+	height : 120%;
+	box-sizing: border-box;
+	padding-bottom: 12px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 50%;
+
+} */
 
 .cm {
 	font-size: 18px;

@@ -70,14 +70,17 @@
 					</div>
 
 				</div>
+				
 
 				<div class="commodity">
 					<ul>
 						<c:forEach items="${product3}" var="product3">
 							<li>
+								<%-- <input type="hidden" name = "cartnum" value="${product3.cartnum}"> --%>
 								<p class="cart-num">
 									<input type="text" class="cart-num2" value="${product3.number}">
-									<input type="text" class="cart-del" value="X">
+									<%-- <p class="cart-del"><a href="/osulloc/page/proddel?cartnum=${product3.cartnum}">X</a></p> --%>
+									<input type="text" class="cart-del" value="X" data-cartnum="${product3.cartnum}">
 								</p> 
 								<a href="#" class="pic2">
 									<img src="/osulloc/display?fileName=${product3.filename}" alt="">
@@ -91,6 +94,7 @@
 						</c:forEach>
 					</ul>
 				</div>
+
 
 			</div>
 		</div>

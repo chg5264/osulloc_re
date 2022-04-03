@@ -1,5 +1,6 @@
 package org.osulloc.controller;
 
+import org.osulloc.domain.BoardDTO;
 import org.osulloc.domain.ProductDTO;
 import org.osulloc.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,9 +41,20 @@ public class MainController {
 
 	@GetMapping("cartPage")
 	public void cartpagePost(Model model, ProductDTO prod) {
-
+		
 		model.addAttribute("product3", service.product3se(prod));
 
+	}
+	
+	//삭제 버튼을 클릭하면
+	@GetMapping("proddel")
+	public String proddel(ProductDTO prod) {
+		
+		/*int cartnum = prod.getCartnum();*/
+		System.out.println("controller cartnum =" + prod);
+		service.productdel(prod);
+		
+		return "redirect:/page/cartPage";
 	}
 
 	@GetMapping("subpage")

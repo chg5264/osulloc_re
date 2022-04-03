@@ -30,8 +30,7 @@
 	</select>
 
 
-	<select id="product3se"
-		resultType="org.osulloc.domain.ProductDTO">
+	<select id="product3se" resultType="org.osulloc.domain.ProductDTO">
 		select * from cart
 	</select>
 
@@ -42,9 +41,12 @@
 		#{name}, #{sale}, #{number},#{filename});
 
 	</insert>
+	
+	<delete id="productdel">
+		delete from cart where cartnum = #{cartnum}
+	</delete>
 
-	<select id="productse"
-		resultType="org.osulloc.domain.ProductDTO">
+	<select id="productse" resultType="org.osulloc.domain.ProductDTO">
 
 		select prodnum, name, petc, kind, scent, type, color, price, sale, number,
 		concat(replace(uploadpath,'\\','/'),'/',uuid,'_',filename) as filename

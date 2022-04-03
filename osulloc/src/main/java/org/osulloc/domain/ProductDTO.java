@@ -21,6 +21,7 @@ public class ProductDTO {
 	private int sale;
 	private String regdate;
 	private int number;
+	private int cartnum;
 
 	public String getPetc() {
 		return petc;
@@ -142,12 +143,22 @@ public class ProductDTO {
 		this.number = number;
 	}
 
+	public int getCartnum() {
+		return cartnum;
+	}
+
+	public void setCartnum(int cartnum) {
+		this.cartnum = cartnum;
+	}
+
 	@Override
 	public String toString() {
 		return "ProductDTO [petc=" + petc + ", image=" + image + ", uuid=" + uuid + ", uploadpath=" + uploadpath
 				+ ", filename=" + filename + ", prodnum=" + prodnum + ", name=" + name + ", kind=" + kind + ", scent="
 				+ scent + ", type=" + type + ", color=" + color + ", price=" + price + ", sale=" + sale + ", regdate="
-				+ regdate + ", number=" + number + "]";
+				+ regdate + ", number=" + number + ", cartnum=" + cartnum + "]";
 	}
+
+	
 
 }

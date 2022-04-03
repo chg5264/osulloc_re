@@ -87,6 +87,10 @@ $(document).ready( function() {
 			//장바구니 삭제
 			$(".cart-del").click(function(){
 				
+				var cartnum = $(this).data('cartnum');
+				
+				 location.href = "/osulloc/page/proddel?cartnum=" + cartnum;
+				
 			})
 
 });

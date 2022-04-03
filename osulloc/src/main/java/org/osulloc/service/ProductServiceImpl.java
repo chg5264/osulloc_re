@@ -30,6 +30,12 @@ public class ProductServiceImpl implements ProductService {
 	public void product3in(ProductDTO prod) {
 		pmapper.product3in(prod);
 	}
+	
+	// 장바구니 delete
+	public void productdel(ProductDTO prod) {
+		System.out.println("service cartnum =" + prod);
+		pmapper.productdel(prod);
+	}
 
 	// 제품 상세페이지 select
 	public ProductDTO productse(ProductDTO prod) {
