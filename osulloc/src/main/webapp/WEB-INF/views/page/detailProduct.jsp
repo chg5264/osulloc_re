@@ -144,7 +144,7 @@
 										<c:if test="${login != null}">
 											<button type="button" class="detail_right_more"
 												id="detail_right_more${productreview.pno}"
-												data-pno="${productreview.pno}">:</button>
+												data-pno="${productreview.pno}">Click</button>
 											<div class="more" id="more${productreview.pno}"
 												data-pno="${productreview.pno}">
 												<a

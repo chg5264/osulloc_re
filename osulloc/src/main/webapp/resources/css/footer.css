@@ -245,7 +245,7 @@ img {
 	color: #666;
 }
 
-.top a {
+.top{
 	width: 70px;
 	height: 70px;
 	background-color: #ccc;
@@ -262,11 +262,11 @@ img {
 	font-size: 20px;
 }
 
-.top a:focus {
+.top:focus {
 	outline: 0;
 }
 
-.top a:hover {
+.top:hover {
 	background-color: #9ac4a1;
 	cursor: pointer;
 	box-shadow: 0 2px 4px #9ac4a1;

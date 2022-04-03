@@ -22,6 +22,7 @@
 <script src="../resources/js/header.js"></script>
 
 
+
 </head>
 <body>
 
@@ -320,6 +321,7 @@
 
 <script src="../resources/js/mainpage.js"></script>
 <script src="../resources/js/cursor.js"></script>
+<script src="../resources/js/footer.js"></script>
 	
 </html>
 

@@ -102,7 +102,8 @@
 		</div>
 		<!--.footerIn_2-->
 		<div class="top">
-			<a href="">TOP</a>
+			<!-- <a href="">TOP</a> -->
+			TOP
 		</div>
 	</div>
 	<!--.footer-->
