@@ -221,7 +221,7 @@ img {
 	height: 40px;
 	margin-right: 10px;
 	border-radius: 5px;
-	cursor: pointer;
+	/* cursor: pointer; */
 	font-size: 16px;
 	font-weight: bold;
 	border: 1px solid #9ac4a1;
@@ -313,7 +313,7 @@ img {
 	border-radius: 5px;
 	border: 1px solid #9ac4a1;
 	background-color: rgba(163, 204, 145, 0.2);
-	cursor: pointer;
+	/* cursor: pointer; */
 	font-size: 16px;
 	font-weight: bold;
 }

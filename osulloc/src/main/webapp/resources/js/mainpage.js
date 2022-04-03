@@ -66,6 +66,21 @@ $(document).ready(function() {
 		}
 
 	})
+	
+	//cursor
+	
+	$("a").on("mouseover", function(){
+		/*$(".cursor").css('background-color', 'rgb(54, 102, 81)');
+		$(".cursor").css('border', 'rgb(54, 102, 81)');*/
+		$(".cursor").css('background-color', '#9ac4a1');
+		$(".cursor").css('border', '#9ac4a1');
+	})
+	
+	$("a").on("mouseout", function(){
+		$(".cursor").css('background-color', '#fff');
+		$(".cursor").css('border-color', 'rgb(54, 102, 81)');
+
+	})
 
 })// jQuery 끝
 
