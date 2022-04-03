@@ -17,6 +17,7 @@
 <link href="../resources/css/mainpage.css" rel="stylesheet" type="text/css">
 <link href="../resources/css/header.css" rel="stylesheet" type="text/css">
 <link href="../resources/css/footer.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/cursor.css" rel="stylesheet" type="text/css">
 
 <script src="../resources/js/header.js"></script>
 
@@ -24,6 +25,7 @@
 </head>
 <body>
 
+	<%@ include file="../cursor.jsp"%>
 	<%@ include file="../Header&Footer/header.jsp"%>
 
 	<div class="wrap">
@@ -312,9 +314,13 @@
 
 	</div>
 
-	<script src="../resources/js/mainpage.js"></script>
+	
 	<%@ include file="../Header&Footer/footer.jsp"%>
 </body>
+
+<script src="../resources/js/mainpage.js"></script>
+<script src="../resources/js/cursor.js"></script>
+	
 </html>
 
 
