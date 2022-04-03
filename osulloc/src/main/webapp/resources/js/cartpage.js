@@ -1,5 +1,5 @@
-$(document).ready(
-		function() {
+$(document).ready( function() {
+	
 			// 장바구니 페이지 jquery
 
 			let price = 0;
@@ -26,8 +26,8 @@ $(document).ready(
 							$("#cartPrice").val(price + other2);
 							$(this).removeClass("on");
 							
-							/*$(this).children(".cart-del").css('display', 'none');
-							$(this).children(".cart-num2").css('display', 'block');*/
+							$(this).find(".cart-del").css('display', 'none');
+							$(this).find(".cart-num2").css('display', 'block');
 
 						} else {
 
@@ -37,8 +37,8 @@ $(document).ready(
 							$("#total").val(price);
 							$("#cartPrice").val(price + other2);
 							
-							/*$(this).children(".cart-del").css('display', 'block');
-							$(this).children(".cart-num2").css('display', 'none');*/
+							$(this).find(".cart-del").css('display', 'block');
+							$(this).find(".cart-num2").css('display', 'none');
 
 						}
 
@@ -83,7 +83,10 @@ $(document).ready(
 				console.log(shoppingBag);
 
 			})
+			
+			//장바구니 삭제
+			$(".cart-del").click(function(){
+				
+			})
 
-		});
-
-/*a*/
+});
