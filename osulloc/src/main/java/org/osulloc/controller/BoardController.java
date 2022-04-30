@@ -58,7 +58,8 @@ public class BoardController {
 
 	// 게시판 상세페이지에서 이미지를 출력하기 위한 select된 결과를 javascript로
 	@GetMapping(value = "/fileList/{bno}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE) // ajax
-	public ResponseEntity<ArrayList<AttachFileDTO>> fileList(@PathVariable int bno) {
+	public ResponseEntity<ArrayList<AttachFileDTO>> fileList(@PathVariable int bno) { //getmapping에 쓰여진 {bno} 파라미터를  가져온다.
+
 
 		System.out.println(service.fileList(bno));
 
