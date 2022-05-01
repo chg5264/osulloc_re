@@ -59,6 +59,7 @@ public class MainController {
 
 	@GetMapping("subpage")
 	public void subpage() {
+		
 	}
 
 }
